@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Bastos - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Gabriel Silva Bastos</h1>
+                <span class="nav-subtitle">Desenvolvedor Web</span> 
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link"> Início</a></li>
+                <li> <a href="#about" class="nav-link"> Sobre</a></li>
+                <li> <a href="#skills" class="nav-link"> Habilidades</a></li>
+                <li> <a href="#projects" class="nav-link"> Experiências</a></li>
+                <li> <a href="#contact" class="nav-link"> Contato</a></li>
+            </ul>
+
+            <button id="alterar-tema" class="alterar-tema" aria-label="Alternar tema">
+                    <span class="icone-tema">🌙</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Olá, eu sou <span class="highlight">Gabriel</span></h2>
+                <p class="hero-subtitle"> Desenvolvedor Web</p>
+                <p class="hero-description">
+                    Gosta de novas experiências e sempre estar aprendendo. 
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary"> Ver Projetos </a>
+                    <a href="#contact" class="btn btn-secondary"> Entre em Contato</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder"> 
+                    <span>(●'◡'●)</span>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title"> Sobre mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Opa! Sou o Gabriel, tenho 19 anos e atualmente estou cursando Desenvolvimento de Sistemas.</p>
+                        <p>Gosto muito da área de tecnologia.</p>
+                        <p>Sempre buscando ser melhor que ontem.
+                        </p>
+                    </div>
+                </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Projetos concluídos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1+</span>
+                    <span class="stat-label">Anos de Experiência</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Tecnologias</span>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Javascript</span>
+                            <span class="skill-tag">SCSS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3> Ferramentas</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Canvas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">       
+                <div class="container">
+                    <h2 class="section">Meus projetos</h2>
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <div class="project-image">
+                                <div class="projectplace-holder">
+                                    <img src="Assets/pokedex-removebg-preview.png" alt="">
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Pokedex</h3>
+                                <p>Desenvolvido um site baseado em HTML, CSS e JavaScript com API.
+                                    Gerando pokemons de diversos tipos e valores atríbuidos
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-link">
+                                    <a href="https://outter1.github.io/Pokedex/" class="project-link" target="_blank"><br>Ver Demo<br></a>
+                                    <a href="https://github.com/outter1/Pokedex.git" class="project-link" target="_blank">Ver código</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-image">
+                                <div class="projectplace-holder">
+                                    🌐
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>App Mobile + Desktop para pessoas com deficiência visual</h3>
+                                <p>Plataforma com auxílio de AI e API para ajudar deficiêntes visuais com o uso diário do seu celular e auxílio em mapa geográfico.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Kotlin</span>
+                                    <span class="tech-tag">Figma</span>
+                                    <span class="tech-tag">Flutter</span>
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-link">
+                                    <a href="#" class="project-link" target="_blank"><br>Ver Demo<br></a>
+                                    <a href="#" class="project-link" target="_blank">Ver código</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-image">
+                                <div class="projectplace-holder">
+                                    📱
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Site que baixa videos/músicas do Youtube</h3>
+                                <p>Um conversor que pega links do youtube e faz download desses videos ou musícas da maneira que você quiser e na qualidade desejada
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-link">
+                                    <a href="#" class="project-link" target="_blank"><br>Ver Demo<br></a>
+                                    <a href="#" class="project-link" target="_blank">Ver código</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>  
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Experiência</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3> Backend - Python</h3>
+                            <h4>Senai</h4>
+                            <span class="timeline-date"> 10/08 - 12/09</span>
+                            <p>Diversos projetos desenvolvidos em python</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Banco de Dados - SQL</h3>
+                            <h4></h4>
+                            <span class="timeline-date"> 13/09 - 02/10</span>
+                            <p>Desenvolvimento de banco de dados baseado em empresas diversas!</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Web Development - SCSS, JavaScript, HTML</h3>
+                            <h4>Desenvolvimento de sites com SCSS</h4>
+                            <span class="timeline-date"> 02/10 - Today</span>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="contact-info">
+                <h3>Vamos trabalhar juntos!</h3>
+                <p>Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato comigo para discutir projetos, oportunidades ou apenas para trocar ideias. </p>
+            </div>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <span class="contact-icon">📧</span>
+                    <a href="mailto:gabrielsilvabastosgbs@gmail.com">gabrielsilvabastosgbs@gmail.com</a>
+                </div>
+                <div class="contact-method">
+                    <span class="contact-icon">💼</span>
+                    <a href="#">Linkedin</a>
+                </div>
+                <div class="contact-method">
+                    <span class="contact-icon">🐙</span>
+                    <a href="https://github.com/outter1">Github</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea type="text" id="name" name="name" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gabriel Bastos. Todos os direitos reservados.</p>
+            <p>Desenvolvido com ❤️ usando HTML, SCSS e Javascript</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
