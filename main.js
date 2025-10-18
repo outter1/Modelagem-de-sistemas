@@ -22,31 +22,41 @@ class Portfolio {
 
     // ===== GERENCIAMENTO DE TEMA =====
     initTheme() {
-        const themeToggle = document.getElementById('theme-toggle');
+        // aceitar múltiplos seletores para o botão de alternância de tema
+        const themeToggle = document.getElementById('theme-toggle') || document.getElementById('alterar-tema') || document.querySelector('.alterar-tema') || document.querySelector('.theme-toggle');
         const body = document.body;
-        const themeIcon = document.querySelector('.theme-icon');
+        const themeIcon = document.querySelector('.theme-icon') || document.querySelector('.icone-tema');
 
         // Verificar preferência salva ou do sistema
         const savedTheme = localStorage.getItem(CONFIG.THEME_KEY);
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+       // salvo ou preferência do sistema
         if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
             body.classList.add('dark-mode');
-            themeIcon.textContent = '☀️';
+            if (themeIcon) themeIcon.textContent = '☀️';
+        } else {
+            if (themeIcon) themeIcon.textContent = '🌙';
+        }
+        // guarda contra a falta de alternância/botão no DOM
+        if (!themeToggle) {
+            // nothing to attach to, exit gracefully
+            return;
         }
 
         themeToggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
             const isDark = body.classList.contains('dark-mode');
-            
-            themeIcon.textContent = isDark ? '☀️' : '🌙';
+            if (themeIcon) themeIcon.textContent = isDark ? '☀️' : '🌙';
             localStorage.setItem(CONFIG.THEME_KEY, isDark ? 'dark' : 'light');
-            
-            // Animação suave do ícone
-            themeIcon.style.transform = 'scale(0.8)';
-            setTimeout(() => {
-                themeIcon.style.transform = 'scale(1)';
-            }, 150);
+
+            // Animação suave do ícone (if exist)
+            if (themeIcon) {
+                themeIcon.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    themeIcon.style.transform = 'scale(1)';
+                }, 150);
+            }
         });
     }
 
@@ -361,7 +371,8 @@ class Portfolio {
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
             if (!localStorage.getItem(CONFIG.THEME_KEY)) {
                 document.body.classList.toggle('dark-mode', e.matches);
-                document.querySelector('.theme-icon').textContent = e.matches ? '☀️' : '🌙';
+                const themeIcon = document.querySelector('.theme-icon') || document.querySelector('.icone-tema');
+                if (themeIcon) themeIcon.textContent = e.matches ? '☀️' : '🌙';
             }
         });
 

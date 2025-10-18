@@ -17,8 +17,8 @@ body {
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
   --color-primary: #000000;
-  --color-secondary: #ff0000;
-  --color-accent: #ff0000;
+  --color-secondary: #ffffff;
+  --color-accent: #ffffff;
   --color-background: #f0f0f0;
   --color-surface: #f8fafc;
   --color-text-primary: #000000;
