@@ -40,7 +40,6 @@ class Portfolio {
         }
         // guarda contra a falta de alternância/botão no DOM
         if (!themeToggle) {
-            // nothing to attach to, exit gracefully
             return;
         }
 
@@ -467,3 +466,4 @@ const dynamicStyles = `
 const styleSheet = document.createElement('style');
 styleSheet.textContent = dynamicStyles;
 document.head.appendChild(styleSheet);
+
